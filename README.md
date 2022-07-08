@@ -1,14 +1,12 @@
 # Project Title 🚀
 
-Simple overview of use/purpose.
-
 ## 🔴 Live Demo
 
 Not live yet...
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+A landing page which is a place to create musical events
 
 ## Getting Started
 
