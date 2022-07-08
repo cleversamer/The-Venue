@@ -8,11 +8,11 @@ const Carrousel = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 500,
+    speed: 400,
   };
 
   return (
-    <div className="carrousel_wrapper" style={{ height: "100vh !important" }}>
+    <div className="carrousel_wrapper">
       <Slider {...settings}>
         <div>
           <div

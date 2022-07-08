@@ -16,7 +16,7 @@ body {
 
 .featured_container {
   position: "relative";
-  height: 100vh !important;
+  height: calc(100vh - 100px) !important;
 }
 
 .font_righteous {
@@ -53,6 +53,7 @@ body {
 header {
   padding: 10px 0px;
   transition: all 300ms ease-in;
+  box-sizing: border-box !important;
 }
 
 header .header_logo {
@@ -88,12 +89,16 @@ footer .footer_copyright {
 ======================*/
 
 .carrousel_wrapper {
-  height: 700px;
+  /* height: 700px; */
+  /* height: 100vh !important; */
+  max-width: 100% !important;
+  height: fit-content !important;
   overflow: hidden;
 }
 
 .carrousel_image {
   width: 100% !important;
+  height: 100vh !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -128,7 +133,11 @@ footer .footer_copyright {
 .countdown_wrapper {
   position: absolute;
   bottom: 0px;
+  left: 0px;
   color: #fff;
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 
 .countdown_wrapper .countdown_top {
