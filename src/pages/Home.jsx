@@ -1,15 +1,11 @@
-import styled from "styled-components";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <Container>
-      <Heading>Home</Heading>
-    </Container>
+    <div className="app">
+      <Header />
+    </div>
   );
 };
-
-const Container = styled.div``;
-
-const Heading = styled.h1``;
 
 export default Home;
