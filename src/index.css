@@ -6,7 +6,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -17,6 +16,7 @@ body {
 
 .featured_container {
   position: "relative";
+  height: 100vh !important;
 }
 
 .font_righteous {
@@ -128,7 +128,7 @@ footer .footer_copyright {
 .countdown_wrapper {
   position: absolute;
   bottom: 0px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .countdown_wrapper .countdown_top {
@@ -159,6 +159,32 @@ footer .footer_copyright {
   text-transform: uppercase;
   font-size: 20px;
   padding-left: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown_slide {
+    font-size: 26px !important;
+  }
+
+  .countdown_slide * {
+    font-size: inherit !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .countdown_slide {
+    font-size: 18px !important;
+  }
+
+  .countdown_item {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .countdown_slide {
+    font-size: 12px !important;
+  }
 }
 
 /*====================

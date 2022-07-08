@@ -12,12 +12,7 @@ const Carrousel = () => {
   };
 
   return (
-    <div
-      className="carrousel_wrapper"
-      style={{
-        height: `${window.innerHeight}px`,
-      }}
-    >
+    <div className="carrousel_wrapper" style={{ height: "100vh !important" }}>
       <Slider {...settings}>
         <div>
           <div
