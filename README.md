@@ -1,4 +1,4 @@
-# Project Title 🚀
+# The Venue 🚀
 
 ## 🔴 Live Demo
 
@@ -15,7 +15,12 @@ A landing page which is a place to create musical events
 - React
 - React DOM
 - React Router DOM
-- Styled Components
+- MaterialUI
+- MaterialUI Icons
+- React Slick
+- React Carousel
+- React Scroll
+- React Awesome Reveal
 
 ### Installing
 
