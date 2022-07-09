@@ -43,6 +43,7 @@ body {
 
 .center_wrapper {
   width: 900px;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -202,7 +203,9 @@ footer .footer_copyright {
 
 .vn_wrapper {
   display: flex;
+  justify-content: center;
   padding: 170px 0px;
+  padding-top: 300px;
 }
 
 .vn_item {
@@ -261,6 +264,19 @@ footer .footer_copyright {
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 90px;
+}
+
+@media screen and (max-width: 960px) {
+  .vn_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .vn_item {
+    display: flex !important;
+    justify-content: center;
+  }
 }
 
 /*====================
