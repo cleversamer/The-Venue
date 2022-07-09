@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Featured from "../components/featured";
 import VenueNFO from "../components/venueNfo";
 import Highlights from "../components/highlights";
+import Princing from "../components/pricing";
 
 const Home = () => {
   return (
@@ -14,6 +15,8 @@ const Home = () => {
       <VenueNFO />
 
       <Highlights />
+
+      <Princing />
 
       <Footer />
     </div>
