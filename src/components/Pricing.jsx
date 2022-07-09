@@ -1,5 +1,5 @@
 import { Zoom } from "react-awesome-reveal";
-import CustomBtn from "../common/CustomBtn";
+import CustomBtn from "./common/CustomBtn";
 
 const Princing = () => {
   const priceState = {
