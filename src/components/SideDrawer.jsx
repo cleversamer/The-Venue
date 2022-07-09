@@ -1,6 +1,7 @@
+import { scroller } from "react-scroll";
 import { Drawer, List, ListItem } from "@mui/material";
 
-const SideDrawer = ({ open, onClose }) => {
+const SideDrawer = (props) => {
   const links = [
     { where: "featured", value: "To top" },
     { where: "venuenfo", value: "Venue NFO" },
@@ -9,16 +10,32 @@ const SideDrawer = ({ open, onClose }) => {
     { where: "location", value: "Location" },
   ];
 
-  const renderItem = (item) => {
-    return (
-      <ListItem button onClick={() => alert(item.where)} key={item.where}>
-        {item.value}
-      </ListItem>
-    );
+  const scrollToElement = (element) => {
+    scroller.scrollTo(element, {
+      duration: 1250,
+      delay: 100,
+      smooth: true,
+      offset: -150,
+    });
+    props.onClose(false);
   };
 
+  const renderItem = (item) => (
+    <ListItem
+      button
+      onClick={() => scrollToElement(item.where)}
+      key={item.where}
+    >
+      {item.value}
+    </ListItem>
+  );
+
   return (
-    <Drawer anchor={"right"} open={open} onClose={() => onClose(false)}>
+    <Drawer
+      anchor={"right"}
+      open={props.open}
+      onClose={() => props.onClose(false)}
+    >
       <List component="nav">{links.map((item) => renderItem(item))}</List>
     </Drawer>
   );

@@ -1,9 +1,10 @@
+import { Element } from "react-scroll";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Featured from "../components/featured";
 import VenueNFO from "../components/VenueNFO";
 import Highlights from "../components/highlights";
-import Princing from "../components/Pricing";
+import Pricing from "../components/Pricing";
 import Location from "../components/Location";
 
 const Home = () => {
@@ -11,15 +12,25 @@ const Home = () => {
     <div className="app">
       <Header />
 
-      <Featured />
+      <Element name="featured">
+        <Featured />
+      </Element>
 
-      <VenueNFO />
+      <Element name="venuenfo">
+        <VenueNFO />
+      </Element>
 
-      <Highlights />
+      <Element name="highlights">
+        <Highlights />
+      </Element>
 
-      <Princing />
+      <Element name="pricing">
+        <Pricing />
+      </Element>
 
-      <Location />
+      <Element name="location">
+        <Location />
+      </Element>
 
       <Footer />
     </div>
