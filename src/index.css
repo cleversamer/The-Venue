@@ -336,6 +336,24 @@ footer .footer_copyright {
   font-weight: 300;
 }
 
+@media screen and (max-width: 767px) {
+  .discount_wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    padding-top: 30px;
+  }
+
+  .discount_wrapper .discount_porcentage {
+    padding-right: 0;
+  }
+
+  .highlight_wrapper .highlight_description {
+    text-align: center;
+  }
+}
+
 /*====================
       PRICING
 ======================*/
