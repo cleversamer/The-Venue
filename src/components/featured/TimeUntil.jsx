@@ -37,6 +37,10 @@ const TimeUntil = () => {
 
   useEffect(() => {
     setInterval(() => getTimeUntil("Dec, 20, 2022, 01:20:00"), 1000);
+
+    return () => {
+      clearInterval();
+    };
   }, [getTimeUntil]);
 
   return (
