@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import CustomBtn from "../common/CustomBtn";
 
 const Discount = () => {
   const [start, setStart] = useState(0);
@@ -38,12 +39,24 @@ const Discount = () => {
         <Slide right>
           <div className="discount_description">
             <h3>Purchase ticket before 20th June</h3>
+
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
             </p>
+
+            <CustomBtn
+              text="Purchase tickets"
+              link="#"
+              size="small"
+              style={{
+                background: "#ffa800",
+                color: "#ffffff",
+              }}
+              iconTicket={true}
+            />
           </div>
         </Slide>
       </div>
